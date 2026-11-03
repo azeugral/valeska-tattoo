@@ -1,6 +1,7 @@
 """Monta index.html e agendar.html a partir de tools/modelo.html, tools/modelo-agendar.html e das listas de tools/processar.py.
 Uso: python tools/montar.py   (editar os modelos, nunca os .html da raiz)"""
-import html, os, sys
+import base64, html, io, os, re, sys
+from PIL import Image
 AQUI = os.path.dirname(os.path.abspath(__file__)); SITE = os.path.dirname(AQUI)
 sys.path.insert(0, AQUI)
 import processar as P
@@ -66,13 +67,26 @@ def opcoes_disp():
     return '\n'.join(f'            <label><input type="radio" name="desenho" value="{a(d[1])}" data-id="{i + 1:02d}"><img src="assets/img/disp/{i + 1:02d}.webp" alt="" width="640" height="800" loading="lazy"><span>{a(d[1])}</span></label>' for i, d in enumerate(P.DISP))
 
 
+def previa(cam):
+    """Foto em 20x25, embutida no HTML: ocupa o lugar da imagem enquanto ela baixa."""
+    im = Image.open(os.path.join(SITE, cam)).convert('RGB'); k = 25 / max(im.size)
+    b = io.BytesIO(); im.resize((max(1, round(im.width * k)), max(1, round(im.height * k))), Image.LANCZOS).save(b, 'WEBP', quality=45)
+    return base64.b64encode(b.getvalue()).decode()
+
+
+def com_previas(h):
+    def troca(c):
+        return f'<img style="background:url(data:image/webp;base64,{previa(c.group(2))}) center/cover" {c.group(1)}src="{c.group(2)}"'
+    return re.sub(r'<img ((?:(?!class="hero-poster")[^>])*?)src="(assets/img/[^"]+\.webp)"', troca, h)
+
+
 def main():
     m = open(os.path.join(AQUI, 'modelo.html'), encoding='utf-8').read()
     for k, f in (('OBRAS', obras), ('HIST_PALCO', hist_palco), ('HIST', hist), ('CUR', cur), ('DISP', disp)):
         m = m.replace('{{' + k + '}}', f())
-    open(os.path.join(SITE, 'index.html'), 'w', encoding='utf-8', newline='\n').write(m)
+    open(os.path.join(SITE, 'index.html'), 'w', encoding='utf-8', newline='\n').write(com_previas(m))
     g = open(os.path.join(AQUI, 'modelo-agendar.html'), encoding='utf-8').read().replace('{{OPC_DISP}}', opcoes_disp())
-    open(os.path.join(SITE, 'agendar.html'), 'w', encoding='utf-8', newline='\n').write(g)
+    open(os.path.join(SITE, 'agendar.html'), 'w', encoding='utf-8', newline='\n').write(com_previas(g))
     print('html ok')
 
 
