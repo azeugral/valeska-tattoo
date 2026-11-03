@@ -190,7 +190,15 @@ figure { margin: 0; }
 .faq summary::before, .faq summary::after { content: ''; position: absolute; right: 4px; top: 50%; width: 15px; height: 1px; background: var(--tinta); transition: transform .4s var(--ease); }
 .faq summary::after { transform: rotate(90deg); }
 .faq details[open] summary::after { transform: none; }
-.faq details p { padding: 0 44px 24px 0; color: #2b3b46; animation: obra .6s var(--ease) both; }
+.faq details p { padding: 0 44px 24px 0; color: #2b3b46; }
+.faq.vivo summary::after { transform: rotate(90deg); }
+.faq.vivo details.aberta summary::after { transform: none; }
+.faq.vivo .faq-r { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .6s var(--ease); }
+.faq.vivo .faq-r > div { min-height: 0; overflow: hidden; visibility: hidden; transition: visibility 0s linear .6s; }
+.faq.vivo .faq-r p { opacity: 0; transform: translateY(-6px); transition: opacity .3s var(--ease), transform .6s var(--ease); }
+.faq.vivo details.aberta .faq-r { grid-template-rows: 1fr; }
+.faq.vivo details.aberta .faq-r > div { visibility: visible; transition-delay: 0s; }
+.faq.vivo details.aberta .faq-r p { opacity: 1; transform: none; transition-delay: .08s; }
 
 /* final */
 .final { position: relative; overflow: hidden; min-height: 100vh; min-height: 100svh; display: grid; place-items: center; padding: 110px var(--lado); text-align: center; isolation: isolate; }
@@ -291,5 +299,5 @@ figure { margin: 0; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .entrada, .entra, .hero-tit .linha > span, .revela > *, .obra { transition: none !important; animation: none !important; opacity: 1; transform: none; clip-path: none; }
+  .entrada, .entra, .hero-tit .linha > span, .revela > *, .obra, .faq-r, .faq-r > div, .faq-r p { transition: none !important; animation: none !important; opacity: 1; transform: none; clip-path: none; }
 }
