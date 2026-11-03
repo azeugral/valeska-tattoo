@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Valeska · Tatuagem fine line em Recife-PE</title>
+<meta name="description" content="Valeska transforma histórias em tatuagens delicadas: florais, silhuetas, escritas e homenagens em fine line, com arte exclusiva. Atendimento em Piedade, Recife-PE.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#e7edf2">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Valeska · Tatuagem fine line em Recife-PE">
+<meta property="og:description" content="Transformo histórias em tatuagens delicadas. Projetos autorais, traço fino e atemporal.">
+<meta property="og:image" content="https://azeugral.github.io/valeska-tattoo/og.jpg?v=1">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600;700&family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css?v=1">
+</head>
+<body>
+
+<header class="topo" id="topo">
+  <a class="marca" href="#inicio" aria-label="Valeska, início">Valeska</a>
+  <nav class="nav" id="nav" aria-label="Seções">
+    <a href="#trabalhos">Trabalhos</a>
+    <a href="#historias">Histórias</a>
+    <a href="#processo">Processo</a>
+    <a href="#disponiveis">Disponíveis</a>
+    <a href="#duvidas">Dúvidas</a>
+    <a class="btn btn-sm nav-cta" href="agendar.html">Pedir orçamento</a>
+  </nav>
+  <button class="menu-btn" id="menu-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="hero-palco" aria-hidden="true">
+    <img class="hero-poster" src="assets/img/traco-largo-ini.webp" alt="" width="1280" height="720" data-ret-ini="assets/img/traco-retrato-ini.webp" data-ret-fim="assets/img/traco-retrato-fim.webp" data-lar-fim="assets/img/traco-largo-fim.webp">
+    <canvas id="traco"></canvas>
+  </div>
+  <div class="hero-txt">
+    <p class="chapeu entrada" style="--d:.15s">Tatuagem fine line em Recife-PE</p>
+    <h1 class="hero-tit"><span class="linha"><span style="--d:.28s">Valeska</span></span></h1>
+    <p class="hero-sub entrada" style="--d:.62s">Transformo histórias em tatuagens delicadas. Projetos autorais, traço fino e atemporal.</p>
+    <div class="hero-btns entrada" style="--d:.76s">
+      <a class="btn" href="agendar.html">Pedir orçamento <i aria-hidden="true"></i></a>
+      <a class="btn btn-linha" href="#trabalhos">Ver trabalhos</a>
+    </div>
+  </div>
+  <div class="hero-info entrada" style="--d:.95s">
+    <p><b>Arte exclusiva</b> para cada história</p>
+    <p><b>Agulha RL</b> de traço</p>
+    <p><b>Piedade</b>, Recife-PE</p>
+  </div>
+  <p class="hero-leg entrada" style="--d:1.1s">Lírio, girassol e pássaro, tatuagem da Valeska, do decalque ao traço</p>
+</section>
+
+<section class="sobre secao branco" id="sobre">
+  <div class="sobre-grade">
+    <figure class="sobre-foto revela"><img src="assets/img/sobre.webp" alt="Valeska sorrindo enquanto tatua um antebraço" width="1080" height="1350" loading="lazy" decoding="async"></figure>
+    <div class="sobre-txt entra">
+      <p class="chapeu">Sobre</p>
+      <h2>Tatuo porque cada pessoa chega com uma história</h2>
+      <p>Comecei em 2022, depois de longos anos de trabalho, apenas por trabalho. Quando encontrei a tatuagem, a paixão e o ofício finalmente ficaram juntos.</p>
+      <p>Hoje trabalho com fine line: florais, silhuetas, escritas e homenagens. Tem quem chegue com o desenho do filho, um bilhete do avô ou a foto do cachorro que partiu. Eu transformo isso em arte feita para aquele corpo, com agulha RL, a agulha de traço.</p>
+      <p>O cuidado não acaba na sessão. Mando um PDF detalhado e acompanho a cicatrização de todos, sem exceção.</p>
+      <dl class="fatos">
+        <div><dt>2022</dt><dd>a primeira máquina</dd></div>
+        <div><dt>Arte própria</dt><dd>criada para cada cliente</dd></div>
+        <div><dt>Pós-sessão</dt><dd>cicatrização acompanhada</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="trabalhos secao nevoa" id="trabalhos">
+  <div class="cab entra">
+    <p class="chapeu">Portfólio</p>
+    <h2>Trabalhos</h2>
+  </div>
+  <div class="filtros entra" role="group" aria-label="Filtrar trabalhos">
+    <button class="filtro ativo" data-f="tudo" aria-pressed="true">Tudo</button>
+    <button class="filtro" data-f="floral" aria-pressed="false">Florais</button>
+    <button class="filtro" data-f="homenagem" aria-pressed="false">Homenagens</button>
+    <button class="filtro" data-f="figura" aria-pressed="false">Figuras</button>
+    <button class="filtro" data-f="escrita" aria-pressed="false">Escritas</button>
+    <button class="filtro" data-f="mini" aria-pressed="false">Minis</button>
+  </div>
+  <ul class="obras" id="obras" aria-label="Trabalhos">
+    <li class="obra" data-cat="floral"><button class="obra-btn" data-g="assets/img/full/obras-01.webp" data-leg="Lírio, girassol e pássaro" data-det="Floral" aria-label="Ampliar: Lírio, girassol e pássaro">
+      <span class="obra-img"><img src="assets/img/obras/01-p.webp" srcset="assets/img/obras/01-p.webp 480w, assets/img/obras/01.webp 960w" sizes="(max-width: 700px) 46vw, (max-width: 1100px) 33vw, 25vw" alt="Lírio, girassol e pássaro" width="480" height="600" loading="lazy" decoding="async" draggable="false"></span>
+      <span class="obra-leg"><b>Lírio, girassol e pássaro</b><small>Floral</small></span></button></li>
+    <li class="obra" data-cat="figura"><button class="obra-btn" data-g="assets/img/full/obras-02.webp" data-leg="Onça com flores" data-det="Figura" aria-label="Ampliar: Onça com flores">
+      <span class="obra-img"><img src="assets/img/obras/02-p.webp" srcset="assets/img/obras/02-p.webp 480w, assets/img/obras/02.webp 960w" sizes="(max-width: 700px) 46vw, (max-width: 1100px) 33vw, 25vw" alt="Onça com flores" width="480" height="600" loading="lazy" decoding="async" draggable="false"></span>
+      <span class="obra-leg"><b>Onça com flores</b><small>Figura</small></span></button></li>
+    <li class="obra" data-cat="homenagem"><button class="obra-btn" data-g="assets/img/full/obras-03.webp" data-leg="Silhueta com o melhor amigo" data-det="Homenagem" aria-label="Ampliar: Silhueta com o melhor amigo">
+      <span class="obra-img"><img src="assets/img/obras/03-p.webp" srcset="assets/img/obras/03-p.webp 480w, assets/img/obras/03.webp 960w" sizes="(max-width: 700px) 46vw, (max-width: 1100px) 33vw, 25vw" alt="Silhueta com o melhor amigo" width="480" height="600" loading="lazy" decoding="async" draggable="false"></span>
+      <span class="obra-leg"><b>Silhueta com o melhor amigo</b><small>Homenagem</small></span></button></li>
+    <li class="obra" data-cat="floral"><button class="obra-btn" data-g="assets/img/full/obras-04.webp" data-leg="Ramo no ombro" data-det="Floral" aria-label="Ampliar: Ramo no ombro">
+      <span class="obra-img"><img src="assets/img/obras/04-p.webp" srcset="assets/img/obras/04-p.webp 480w, assets/img/obras/04.webp 960w" sizes="(max-width: 700px) 46vw, (max-width: 1100px) 33vw, 25vw" alt="Ramo no ombro" width="480" height="600" loading="lazy" decoding="async" draggable="false"></span>
+      <span class="obra-leg"><b>Ramo no ombro</b><small>Floral</small></span></button></li>
+    <li class="obra" data-cat="homenagem"><button class="obra-btn" data-g="assets/img/full/obras-05.webp" data-leg="O pezinho da Aurora" data-det="Homenagem" aria-label="Ampliar: O pezinho da Aurora">
+      <span class="obra-img"><img src="assets/img/obras/05-p.webp" srcset="assets/img/obras/05-p.webp 480w, assets/img/obras/05.webp 960w" sizes="(max-width: 700px) 46vw, (max-width: 1100px) 33vw, 25vw" alt="O pezinho da Aurora" width="480" height="600" loading="lazy" decoding="async" draggable="false"></span>
+      <span class="obra-leg"><b>O pezinho da Aurora</b><small>Homenagem</small></span></button></li>
+    <li class="obra" data-cat="floral"><button class="obra-btn" data-g="assets/img/full/obras-06.webp" data-leg="Peônia no pescoço" data-det="Floral" aria-label="Ampliar: Peônia no pescoço">
+      <span class="obra-img"><img src="assets/img/obras/06-p.webp" srcset="assets/img/obras/06-p.webp 480w, assets/img/obras/06.webp 960w" sizes="(max-width: 700px) 46vw, (max-width: 1100px) 33vw, 25vw" alt="Peônia no pescoço" width="480" height="600" loading="lazy" decoding="async" draggable="false"></span>
+      <span class="obra-leg"><b>Peônia no pescoço</b><small>Floral</small></span></button></li>
+    <li class="obra" data-cat="figura"><button class="obra-btn" data-g="assets/img/full/obras-07.webp" data-leg="Gato samurai" data-det="Figura" aria-label="Ampliar: Gato samurai">
+      <span class="obra-img"><img src="assets/img/obras/07-p.webp" srcset="assets/img/obras/07-p.webp 480w, assets/img/obras/07.webp 960w" sizes="(max-width: 700px) 46vw, (max-width: 1100px) 33vw, 25vw" alt="Gato samurai" width="480" height="600" loading="lazy" decoding="async" draggable="false"></span>
+      <span class="obra-leg"><b>Gato samurai</b><small>Figura</small></span></button></li>
+    <li class="obra" data-cat="escrita"><button class="obra-btn" data-g="assets/img/full/obras-08.webp" data-leg="Tudo passa" data-det="Escrita" aria-label="Ampliar: Tudo passa">
+      <span class="obra-img"><img src="assets/img/obras/08-p.webp" srcset="assets/img/obras/08-p.webp 480w, assets/img/obras/08.webp 960w" sizes="(max-width: 700px) 46vw, (max-width: 1100px) 33vw, 25vw" alt="Tudo passa" width="480" height="600" loading="lazy" decoding="async" draggable="false"></span>
+      <span class="obra-leg"><b>Tudo passa</b><small>Escrita</small></span></button></li>
+    <li class="obra" data-cat="homenagem"><button class="obra-btn" data-g="assets/img/full/obras-09.webp" data-leg="Avós e neto" data-det="Homenagem" aria-label="Ampliar: Avós e neto">
+      <span class="obra-img"><img src="assets/img/obras/09-p.webp" srcset="assets/img/obras/09-p.webp 480w, assets/img/obras/09.webp 960w" sizes="(max-width: 700px) 46vw, (max-width: 1100px) 33vw, 25vw" alt="Avós e neto" width="480" height="600" loading="lazy" decoding="async" draggable="false"></span>
+      <span class="obra-leg"><b>Avós e neto</b><small>Homenagem</small></span></button></li>
+    <li class="obra" data-cat="floral"><button class="obra-btn" data-g="assets/img/full/obras-10.webp" data-leg="Borboleta com floral" data-det="Floral" aria-label="Ampliar: Borboleta com floral">
+      <span class="obra-img"><img src="assets/img/obras/10-p.webp" srcset="assets/img/obras/10-p.webp 480w, assets/img/obras/10.webp 960w" sizes="(max-width: 700px) 46vw, (max-width: 1100px) 33vw, 25vw" alt="Borboleta com floral" width="480" height="600" loading="lazy" decoding="async" draggable="false"></span>
+      <span class="obra-leg"><b>Borboleta com floral</b><small>Floral</small></span></button></li>
+    <li class="obra" data-cat="figura"><button class="obra-btn" data-g="assets/img/full/obras-11.webp" data-leg="Medusa" data-det="Figura" aria-label="Ampliar: Medusa">
+      <span class="obra-img"><img src="assets/img/obras/11-p.webp" srcset="assets/img/obras/11-p.webp 480w, assets/img/obras/11.webp 960w" sizes="(max-width: 700px) 46vw, (max-width: 1100px) 33vw, 25vw" alt="Medusa" width="480" height="600" loading="lazy" decoding="async" draggable="false"></span>
+      <span class="obra-leg"><b>Medusa</b><small>Figura</small></span></button></li>
+    <li class="obra" data-cat="floral"><button class="obra-btn" data-g="assets/img/full/obras-12.webp" data-leg="Raminho da Mariana" data-det="Floral" aria-label="Ampliar: Raminho da Mariana">
+      <span class="obra-img"><img src="assets/img/obras/12-p.webp" srcset="assets/img/obras/12-p.webp 480w, assets/img/obras/12.webp 960w" sizes="(max-width: 700px) 46vw, (max-width: 1100px) 33vw, 25vw" alt="Raminho da Mariana" width="480" height="600" loading="lazy" decoding="async" draggable="false"></span>
+      <span class="obra-leg"><b>Raminho da Mariana</b><small>Floral</small></span></button></li>
+    <li class="obra" data-cat="mini"><button class="obra-btn" data-g="assets/img/full/obras-13.webp" data-leg="Gatinhos" data-det="Mini" aria-label="Ampliar: Gatinhos">
+      <span class="obra-img"><img src="assets/img/obras/13-p.webp" srcset="assets/img/obras/13-p.webp 480w, assets/img/obras/13.webp 960w" sizes="(max-width: 700px) 46vw, (max-width: 1100px) 33vw, 25vw" alt="Gatinhos" width="480" height="600" loading="lazy" decoding="async" draggable="false"></span>
+      <span class="obra-leg"><b>Gatinhos</b><small>Mini</small></span></button></li>
+    <li class="obra" data-cat="homenagem"><button class="obra-btn" data-g="assets/img/full/obras-14.webp" data-leg="A mãozinha da Mainha" data-det="Homenagem" aria-label="Ampliar: A mãozinha da Mainha">
+      <span class="obra-img"><img src="assets/img/obras/14-p.webp" srcset="assets/img/obras/14-p.webp 480w, assets/img/obras/14.webp 960w" sizes="(max-width: 700px) 46vw, (max-width: 1100px) 33vw, 25vw" alt="A mãozinha da Mainha" width="480" height="600" loading="lazy" decoding="async" draggable="false"></span>
+      <span class="obra-leg"><b>A mãozinha da Mainha</b><small>Homenagem</small></span></button></li>
+    <li class="obra" data-cat="floral"><button class="obra-btn" data-g="assets/img/full/obras-15.webp" data-leg="Borboleta e rosas" data-det="Floral" aria-label="Ampliar: Borboleta e rosas">
+      <span class="obra-img"><img src="assets/img/obras/15-p.webp" srcset="assets/img/obras/15-p.webp 480w, assets/img/obras/15.webp 960w" sizes="(max-width: 700px) 46vw, (max-width: 1100px) 33vw, 25vw" alt="Borboleta e rosas" width="480" height="600" loading="lazy" decoding="async" draggable="false"></span>
+      <span class="obra-leg"><b>Borboleta e rosas</b><small>Floral</small></span></button></li>
+    <li class="obra" data-cat="homenagem"><button class="obra-btn" data-g="assets/img/full/obras-16.webp" data-leg="Silhueta de foto" data-det="Homenagem" aria-label="Ampliar: Silhueta de foto">
+      <span class="obra-img"><img src="assets/img/obras/16-p.webp" srcset="assets/img/obras/16-p.webp 480w, assets/img/obras/16.webp 960w" sizes="(max-width: 700px) 46vw, (max-width: 1100px) 33vw, 25vw" alt="Silhueta de foto" width="480" height="600" loading="lazy" decoding="async" draggable="false"></span>
+      <span class="obra-leg"><b>Silhueta de foto</b><small>Homenagem</small></span></button></li>
+    <li class="obra" data-cat="floral"><button class="obra-btn" data-g="assets/img/full/obras-17.webp" data-leg="Rosas na perna" data-det="Floral" aria-label="Ampliar: Rosas na perna">
+      <span class="obra-img"><img src="assets/img/obras/17-p.webp" srcset="assets/img/obras/17-p.webp 480w, assets/img/obras/17.webp 960w" sizes="(max-width: 700px) 46vw, (max-width: 1100px) 33vw, 25vw" alt="Rosas na perna" width="480" height="600" loading="lazy" decoding="async" draggable="false"></span>
+      <span class="obra-leg"><b>Rosas na perna</b><small>Floral</small></span></button></li>
+    <li class="obra" data-cat="escrita"><button class="obra-btn" data-g="assets/img/full/obras-18.webp" data-leg="Feita de sonhos, cicatrizes e recomeços" data-det="Escrita" aria-label="Ampliar: Feita de sonhos, cicatrizes e recomeços">
+      <span class="obra-img"><img src="assets/img/obras/18-p.webp" srcset="assets/img/obras/18-p.webp 480w, assets/img/obras/18.webp 960w" sizes="(max-width: 700px) 46vw, (max-width: 1100px) 33vw, 25vw" alt="Feita de sonhos, cicatrizes e recomeços" width="480" height="600" loading="lazy" decoding="async" draggable="false"></span>
+      <span class="obra-leg"><b>Feita de sonhos, cicatrizes e recomeços</b><small>Escrita</small></span></button></li>
+    <li class="obra" data-cat="figura"><button class="obra-btn" data-g="assets/img/full/obras-19.webp" data-leg="Onça mimosa" data-det="Figura" aria-label="Ampliar: Onça mimosa">
+      <span class="obra-img"><img src="assets/img/obras/19-p.webp" srcset="assets/img/obras/19-p.webp 480w, assets/img/obras/19.webp 960w" sizes="(max-width: 700px) 46vw, (max-width: 1100px) 33vw, 25vw" alt="Onça mimosa" width="480" height="600" loading="lazy" decoding="async" draggable="false"></span>
+      <span class="obra-leg"><b>Onça mimosa</b><small>Figura</small></span></button></li>
+    <li class="obra" data-cat="floral"><button class="obra-btn" data-g="assets/img/full/obras-20.webp" data-leg="Coração e Provérbios 4:23" data-det="Floral" aria-label="Ampliar: Coração e Provérbios 4:23">
+      <span class="obra-img"><img src="assets/img/obras/20-p.webp" srcset="assets/img/obras/20-p.webp 480w, assets/img/obras/20.webp 960w" sizes="(max-width: 700px) 46vw, (max-width: 1100px) 33vw, 25vw" alt="Coração e Provérbios 4:23" width="480" height="600" loading="lazy" decoding="async" draggable="false"></span>
+      <span class="obra-leg"><b>Coração e Provérbios 4:23</b><small>Floral</small></span></button></li>
+    <li class="obra" data-cat="mini"><button class="obra-btn" data-g="assets/img/full/obras-21.webp" data-leg="Onigiri" data-det="Mini" aria-label="Ampliar: Onigiri">
+      <span class="obra-img"><img src="assets/img/obras/21-p.webp" srcset="assets/img/obras/21-p.webp 480w, assets/img/obras/21.webp 960w" sizes="(max-width: 700px) 46vw, (max-width: 1100px) 33vw, 25vw" alt="Onigiri" width="480" height="600" loading="lazy" decoding="async" draggable="false"></span>
+      <span class="obra-leg"><b>Onigiri</b><small>Mini</small></span></button></li>
+    <li class="obra" data-cat="homenagem"><button class="obra-btn" data-g="assets/img/full/obras-22.webp" data-leg="Primeiras pegadas" data-det="Homenagem" aria-label="Ampliar: Primeiras pegadas">
+      <span class="obra-img"><img src="assets/img/obras/22-p.webp" srcset="assets/img/obras/22-p.webp 480w, assets/img/obras/22.webp 960w" sizes="(max-width: 700px) 46vw, (max-width: 1100px) 33vw, 25vw" alt="Primeiras pegadas" width="480" height="600" loading="lazy" decoding="async" draggable="false"></span>
+      <span class="obra-leg"><b>Primeiras pegadas</b><small>Homenagem</small></span></button></li>
+    <li class="obra" data-cat="floral"><button class="obra-btn" data-g="assets/img/full/obras-23.webp" data-leg="Floral no antebraço" data-det="Floral" aria-label="Ampliar: Floral no antebraço">
+      <span class="obra-img"><img src="assets/img/obras/23-p.webp" srcset="assets/img/obras/23-p.webp 480w, assets/img/obras/23.webp 960w" sizes="(max-width: 700px) 46vw, (max-width: 1100px) 33vw, 25vw" alt="Floral no antebraço" width="480" height="600" loading="lazy" decoding="async" draggable="false"></span>
+      <span class="obra-leg"><b>Floral no antebraço</b><small>Floral</small></span></button></li>
+    <li class="obra" data-cat="figura"><button class="obra-btn" data-g="assets/img/full/obras-24.webp" data-leg="Rosa dos ventos" data-det="Figura" aria-label="Ampliar: Rosa dos ventos">
+      <span class="obra-img"><img src="assets/img/obras/24-p.webp" srcset="assets/img/obras/24-p.webp 480w, assets/img/obras/24.webp 960w" sizes="(max-width: 700px) 46vw, (max-width: 1100px) 33vw, 25vw" alt="Rosa dos ventos" width="480" height="600" loading="lazy" decoding="async" draggable="false"></span>
+      <span class="obra-leg"><b>Rosa dos ventos</b><small>Figura</small></span></button></li>
+    <li class="obra" data-cat="escrita"><button class="obra-btn" data-g="assets/img/full/obras-25.webp" data-leg="Seja forte e corajosa" data-det="Escrita" aria-label="Ampliar: Seja forte e corajosa">
+      <span class="obra-img"><img src="assets/img/obras/25-p.webp" srcset="assets/img/obras/25-p.webp 480w, assets/img/obras/25.webp 960w" sizes="(max-width: 700px) 46vw, (max-width: 1100px) 33vw, 25vw" alt="Seja forte e corajosa" width="480" height="600" loading="lazy" decoding="async" draggable="false"></span>
+      <span class="obra-leg"><b>Seja forte e corajosa</b><small>Escrita</small></span></button></li>
+    <li class="obra" data-cat="figura"><button class="obra-btn" data-g="assets/img/full/obras-26.webp" data-leg="Leoa nas costas" data-det="Figura" aria-label="Ampliar: Leoa nas costas">
+      <span class="obra-img"><img src="assets/img/obras/26-p.webp" srcset="assets/img/obras/26-p.webp 480w, assets/img/obras/26.webp 960w" sizes="(max-width: 700px) 46vw, (max-width: 1100px) 33vw, 25vw" alt="Leoa nas costas" width="480" height="600" loading="lazy" decoding="async" draggable="false"></span>
+      <span class="obra-leg"><b>Leoa nas costas</b><small>Figura</small></span></button></li>
+    <li class="obra" data-cat="floral"><button class="obra-btn" data-g="assets/img/full/obras-27.webp" data-leg="Floresça onde Deus te plantar" data-det="Floral" aria-label="Ampliar: Floresça onde Deus te plantar">
+      <span class="obra-img"><img src="assets/img/obras/27-p.webp" srcset="assets/img/obras/27-p.webp 480w, assets/img/obras/27.webp 960w" sizes="(max-width: 700px) 46vw, (max-width: 1100px) 33vw, 25vw" alt="Floresça onde Deus te plantar" width="480" height="600" loading="lazy" decoding="async" draggable="false"></span>
+      <span class="obra-leg"><b>Floresça onde Deus te plantar</b><small>Floral</small></span></button></li>
+    <li class="obra" data-cat="homenagem"><button class="obra-btn" data-g="assets/img/full/obras-28.webp" data-leg="Coração de digitais" data-det="Homenagem" aria-label="Ampliar: Coração de digitais">
+      <span class="obra-img"><img src="assets/img/obras/28-p.webp" srcset="assets/img/obras/28-p.webp 480w, assets/img/obras/28.webp 960w" sizes="(max-width: 700px) 46vw, (max-width: 1100px) 33vw, 25vw" alt="Coração de digitais" width="480" height="600" loading="lazy" decoding="async" draggable="false"></span>
+      <span class="obra-leg"><b>Coração de digitais</b><small>Homenagem</small></span></button></li>
+    <li class="obra" data-cat="mini"><button class="obra-btn" data-g="assets/img/full/obras-29.webp" data-leg="Carpa" data-det="Mini" aria-label="Ampliar: Carpa">
+      <span class="obra-img"><img src="assets/img/obras/29-p.webp" srcset="assets/img/obras/29-p.webp 480w, assets/img/obras/29.webp 960w" sizes="(max-width: 700px) 46vw, (max-width: 1100px) 33vw, 25vw" alt="Carpa" width="480" height="600" loading="lazy" decoding="async" draggable="false"></span>
+      <span class="obra-leg"><b>Carpa</b><small>Mini</small></span></button></li>
+    <li class="obra" data-cat="figura"><button class="obra-btn" data-g="assets/img/full/obras-30.webp" data-leg="Aparecida e São Francisco" data-det="Figura" aria-label="Ampliar: Aparecida e São Francisco">
+      <span class="obra-img"><img src="assets/img/obras/30-p.webp" srcset="assets/img/obras/30-p.webp 480w, assets/img/obras/30.webp 960w" sizes="(max-width: 700px) 46vw, (max-width: 1100px) 33vw, 25vw" alt="Aparecida e São Francisco" width="480" height="600" loading="lazy" decoding="async" draggable="false"></span>
+      <span class="obra-leg"><b>Aparecida e São Francisco</b><small>Figura</small></span></button></li>
+    <li class="obra" data-cat="floral"><button class="obra-btn" data-g="assets/img/full/obras-31.webp" data-leg="Lírio nas costas" data-det="Floral" aria-label="Ampliar: Lírio nas costas">
+      <span class="obra-img"><img src="assets/img/obras/31-p.webp" srcset="assets/img/obras/31-p.webp 480w, assets/img/obras/31.webp 960w" sizes="(max-width: 700px) 46vw, (max-width: 1100px) 33vw, 25vw" alt="Lírio nas costas" width="480" height="600" loading="lazy" decoding="async" draggable="false"></span>
+      <span class="obra-leg"><b>Lírio nas costas</b><small>Floral</small></span></button></li>
+    <li class="obra" data-cat="homenagem"><button class="obra-btn" data-g="assets/img/full/obras-32.webp" data-leg="Alícia" data-det="Homenagem" aria-label="Ampliar: Alícia">
+      <span class="obra-img"><img src="assets/img/obras/32-p.webp" srcset="assets/img/obras/32-p.webp 480w, assets/img/obras/32.webp 960w" sizes="(max-width: 700px) 46vw, (max-width: 1100px) 33vw, 25vw" alt="Alícia" width="480" height="600" loading="lazy" decoding="async" draggable="false"></span>
+      <span class="obra-leg"><b>Alícia</b><small>Homenagem</small></span></button></li>
+    <li class="obra" data-cat="escrita"><button class="obra-btn" data-g="assets/img/full/obras-33.webp" data-leg="One day at a time" data-det="Escrita" aria-label="Ampliar: One day at a time">
+      <span class="obra-img"><img src="assets/img/obras/33-p.webp" srcset="assets/img/obras/33-p.webp 480w, assets/img/obras/33.webp 960w" sizes="(max-width: 700px) 46vw, (max-width: 1100px) 33vw, 25vw" alt="One day at a time" width="480" height="600" loading="lazy" decoding="async" draggable="false"></span>
+      <span class="obra-leg"><b>One day at a time</b><small>Escrita</small></span></button></li>
+    <li class="obra" data-cat="floral"><button class="obra-btn" data-g="assets/img/full/obras-34.webp" data-leg="Beija-flor" data-det="Floral" aria-label="Ampliar: Beija-flor">
+      <span class="obra-img"><img src="assets/img/obras/34-p.webp" srcset="assets/img/obras/34-p.webp 480w, assets/img/obras/34.webp 960w" sizes="(max-width: 700px) 46vw, (max-width: 1100px) 33vw, 25vw" alt="Beija-flor" width="480" height="600" loading="lazy" decoding="async" draggable="false"></span>
+      <span class="obra-leg"><b>Beija-flor</b><small>Floral</small></span></button></li>
+    <li class="obra" data-cat="mini"><button class="obra-btn" data-g="assets/img/full/obras-35.webp" data-leg="Om" data-det="Mini" aria-label="Ampliar: Om">
+      <span class="obra-img"><img src="assets/img/obras/35-p.webp" srcset="assets/img/obras/35-p.webp 480w, assets/img/obras/35.webp 960w" sizes="(max-width: 700px) 46vw, (max-width: 1100px) 33vw, 25vw" alt="Om" width="480" height="600" loading="lazy" decoding="async" draggable="false"></span>
+      <span class="obra-leg"><b>Om</b><small>Mini</small></span></button></li>
+    <li class="obra" data-cat="figura"><button class="obra-btn" data-g="assets/img/full/obras-36.webp" data-leg="Dança de cinema" data-det="Figura" aria-label="Ampliar: Dança de cinema">
+      <span class="obra-img"><img src="assets/img/obras/36-p.webp" srcset="assets/img/obras/36-p.webp 480w, assets/img/obras/36.webp 960w" sizes="(max-width: 700px) 46vw, (max-width: 1100px) 33vw, 25vw" alt="Dança de cinema" width="480" height="600" loading="lazy" decoding="async" draggable="false"></span>
+      <span class="obra-leg"><b>Dança de cinema</b><small>Figura</small></span></button></li>
+    <li class="obra" data-cat="homenagem"><button class="obra-btn" data-g="assets/img/full/obras-37.webp" data-leg="Danny e o pequeno Daniel" data-det="Homenagem" aria-label="Ampliar: Danny e o pequeno Daniel">
+      <span class="obra-img"><img src="assets/img/obras/37-p.webp" srcset="assets/img/obras/37-p.webp 480w, assets/img/obras/37.webp 960w" sizes="(max-width: 700px) 46vw, (max-width: 1100px) 33vw, 25vw" alt="Danny e o pequeno Daniel" width="480" height="600" loading="lazy" decoding="async" draggable="false"></span>
+      <span class="obra-leg"><b>Danny e o pequeno Daniel</b><small>Homenagem</small></span></button></li>
+    <li class="obra" data-cat="figura"><button class="obra-btn" data-g="assets/img/full/obras-38.webp" data-leg="Rick e Morty" data-det="Figura" aria-label="Ampliar: Rick e Morty">
+      <span class="obra-img"><img src="assets/img/obras/38-p.webp" srcset="assets/img/obras/38-p.webp 480w, assets/img/obras/38.webp 960w" sizes="(max-width: 700px) 46vw, (max-width: 1100px) 33vw, 25vw" alt="Rick e Morty" width="480" height="600" loading="lazy" decoding="async" draggable="false"></span>
+      <span class="obra-leg"><b>Rick e Morty</b><small>Figura</small></span></button></li>
+    <li class="obra" data-cat="mini"><button class="obra-btn" data-g="assets/img/full/obras-39.webp" data-leg="Âncora" data-det="Mini" aria-label="Ampliar: Âncora">
+      <span class="obra-img"><img src="assets/img/obras/39-p.webp" srcset="assets/img/obras/39-p.webp 480w, assets/img/obras/39.webp 960w" sizes="(max-width: 700px) 46vw, (max-width: 1100px) 33vw, 25vw" alt="Âncora" width="480" height="600" loading="lazy" decoding="async" draggable="false"></span>
+      <span class="obra-leg"><b>Âncora</b><small>Mini</small></span></button></li>
+    <li class="obra" data-cat="escrita"><button class="obra-btn" data-g="assets/img/full/obras-40.webp" data-leg="Projetinho da Nanda" data-det="Escrita" aria-label="Ampliar: Projetinho da Nanda">
+      <span class="obra-img"><img src="assets/img/obras/40-p.webp" srcset="assets/img/obras/40-p.webp 480w, assets/img/obras/40.webp 960w" sizes="(max-width: 700px) 46vw, (max-width: 1100px) 33vw, 25vw" alt="Projetinho da Nanda" width="480" height="600" loading="lazy" decoding="async" draggable="false"></span>
+      <span class="obra-leg"><b>Projetinho da Nanda</b><small>Escrita</small></span></button></li>
+    <li class="obra" data-cat="floral"><button class="obra-btn" data-g="assets/img/full/obras-41.webp" data-leg="Resiliência" data-det="Floral" aria-label="Ampliar: Resiliência">
+      <span class="obra-img"><img src="assets/img/obras/41-p.webp" srcset="assets/img/obras/41-p.webp 480w, assets/img/obras/41.webp 960w" sizes="(max-width: 700px) 46vw, (max-width: 1100px) 33vw, 25vw" alt="Resiliência" width="480" height="600" loading="lazy" decoding="async" draggable="false"></span>
+      <span class="obra-leg"><b>Resiliência</b><small>Floral</small></span></button></li>
+    <li class="obra" data-cat="mini"><button class="obra-btn" data-g="assets/img/full/obras-42.webp" data-leg="Lua e estrelas" data-det="Mini" aria-label="Ampliar: Lua e estrelas">
+      <span class="obra-img"><img src="assets/img/obras/42-p.webp" srcset="assets/img/obras/42-p.webp 480w, assets/img/obras/42.webp 960w" sizes="(max-width: 700px) 46vw, (max-width: 1100px) 33vw, 25vw" alt="Lua e estrelas" width="480" height="600" loading="lazy" decoding="async" draggable="false"></span>
+      <span class="obra-leg"><b>Lua e estrelas</b><small>Mini</small></span></button></li>
+  </ul>
+  <div class="mais-wrap"><button class="btn btn-linha" id="ver-mais">Ver mais trabalhos</button></div>
+</section>
+
+<section class="historias azul" id="historias">
+  <div class="cab entra">
+    <p class="chapeu">O que vem antes do traço</p>
+    <h2>Histórias que viraram tatuagem</h2>
+  </div>
+  <div class="hist-grade" id="hist-grade">
+    <div class="hist-palco" aria-hidden="true">
+      <img class="hp ativo" src="assets/img/hist/1.webp" alt="" width="1080" height="1350" loading="eager" decoding="async">
+      <img class="hp" src="assets/img/hist/2.webp" alt="" width="1080" height="1350" loading="lazy" decoding="async">
+      <img class="hp" src="assets/img/hist/3.webp" alt="" width="1080" height="1350" loading="lazy" decoding="async">
+      <img class="hp" src="assets/img/hist/4.webp" alt="" width="1080" height="1350" loading="lazy" decoding="async">
+      <img class="hp" src="assets/img/hist/5.webp" alt="" width="1080" height="1350" loading="lazy" decoding="async">
+      <img class="hp" src="assets/img/hist/6.webp" alt="" width="1080" height="1350" loading="lazy" decoding="async">
+    </div>
+    <div class="hist-lista">
+      <article class="hist" data-i="0"><figure class="hist-foto"><img src="assets/img/hist/1-p.webp" srcset="assets/img/hist/1-p.webp 540w, assets/img/hist/1.webp 1080w" sizes="100vw" alt="O bilhete do avô" width="540" height="675" loading="lazy" decoding="async" draggable="false"></figure><div class="hist-txt"><p class="hist-quem">Raquel</p><h3>O bilhete do avô</h3><p>Entre as páginas da Bíblia do avô, a Raquel encontrou um recado assinado por ele: &quot;Eu e Tereza saímos para comprar fósforos, voltaremos há pouquinho.&quot; Ele partiu em novembro, e a letra dele foi a primeira tatuagem dela.</p></div></article>
+      <article class="hist" data-i="1"><figure class="hist-foto"><img src="assets/img/hist/2-p.webp" srcset="assets/img/hist/2-p.webp 540w, assets/img/hist/2.webp 1080w" sizes="100vw" alt="O pezinho da Aurora" width="540" height="675" loading="lazy" decoding="async" draggable="false"></figure><div class="hist-txt"><p class="hist-quem">Charles</p><h3>O pezinho da Aurora</h3><p>O Charles levou no braço o pezinho da filha. Filhos crescem, os momentos passam, e esse tamanho de pé ficou guardado do jeito que era.</p></div></article>
+      <article class="hist" data-i="2"><figure class="hist-foto"><img src="assets/img/hist/3-p.webp" srcset="assets/img/hist/3-p.webp 540w, assets/img/hist/3.webp 1080w" sizes="100vw" alt="A tela em branco" width="540" height="675" loading="lazy" decoding="async" draggable="false"></figure><div class="hist-txt"><p class="hist-quem">Fê</p><h3>A tela em branco</h3><p>A Fê quis um cavalete com a tela vazia, esperando o dia em que tiver um sobrinho para pintar nela. Uma tatuagem de memória futura.</p></div></article>
+      <article class="hist mob-fora" data-i="3"><figure class="hist-foto"><img src="assets/img/hist/4-p.webp" srcset="assets/img/hist/4-p.webp 540w, assets/img/hist/4.webp 1080w" sizes="100vw" alt="A cicatriz que virou Medusa" width="540" height="675" loading="lazy" decoding="async" draggable="false"></figure><div class="hist-txt"><p class="hist-quem">Polly</p><h3>A cicatriz que virou Medusa</h3><p>Depois de um acidente doméstico, a Polly decidiu ressignificar a cicatriz. Criamos a Medusa do jeito que ela queria e, seis meses depois, com 95% da cicatrização, fizemos os ajustes finais.</p></div></article>
+      <article class="hist mob-fora" data-i="4"><figure class="hist-foto"><img src="assets/img/hist/5-p.webp" srcset="assets/img/hist/5-p.webp 540w, assets/img/hist/5.webp 1080w" sizes="100vw" alt="Quema" width="540" height="675" loading="lazy" decoding="async" draggable="false"></figure><div class="hist-txt"><p class="hist-quem">Cliente</p><h3>Quema</h3><p>Uma música da Ainoa Buitrago virou arte exclusiva, com a letra da própria cliente. A cantora viu a tatuagem e respondeu: &quot;Tía, que chulo!&quot;</p></div></article>
+      <article class="hist mob-fora" data-i="5"><figure class="hist-foto"><img src="assets/img/hist/6-p.webp" srcset="assets/img/hist/6-p.webp 540w, assets/img/hist/6.webp 1080w" sizes="100vw" alt="O pincel, aos 49" width="540" height="675" loading="lazy" decoding="async" draggable="false"></figure><div class="hist-txt"><p class="hist-quem">Márcio</p><h3>O pincel, aos 49</h3><p>O Márcio é artista plástico e fez a primeira tatuagem aos 49 anos: um pincel, a coisa que mais significa para ele.</p></div></article>
+    </div>
+  </div>
+  <div class="mob-mais"><button class="btn btn-linha-cl" id="hist-mais" aria-expanded="false">Ver mais histórias</button></div>
+</section>
+
+<section class="processo secao branco" id="processo">
+  <div class="cab entra">
+    <p class="chapeu">Uma tatuagem, do começo ao fim</p>
+    <h2>Como funciona</h2>
+    <p class="lead">Este é o floral que aparece no topo do site, tatuado na Aurê. O caminho é o mesmo para qualquer projeto, grande ou de 5 cm.</p>
+  </div>
+  <ol class="passos">
+    <li class="entra"><figure class="revela"><img src="assets/img/proc-arte.webp" alt="Arte do floral desenhada em linha" width="720" height="900" loading="lazy" decoding="async"></figure><h3>Arte</h3><p>Você conta a ideia e manda as referências pelo WhatsApp. A partir delas eu crio uma arte com identidade própria, que você aprova antes.</p></li>
+    <li class="entra"><figure class="revela"><img src="assets/img/proc-decalque.webp" alt="Decalque violeta sendo aplicado no braço" width="720" height="900" loading="lazy" decoding="async"></figure><h3>Decalque</h3><p>O desenho vai para a pele em violeta. É nessa hora que a gente acerta o lugar e confere como ele acompanha o corpo.</p></li>
+    <li class="entra"><figure class="revela"><video muted loop playsinline preload="none" poster="assets/img/proc-traco.webp" data-src="assets/video/traco-agulha.mp4" width="720" height="900" aria-label="Máquina fazendo o traço sobre o decalque"></video></figure><h3>Traço</h3><p>Com agulha RL, em materiais de alta qualidade, cada linha é feita com calma. Tatuar conversando faz parte.</p></li>
+    <li class="entra"><figure class="revela"><img src="assets/img/proc-pronta.webp" alt="Floral de lírio e girassol pronto no braço" width="720" height="900" loading="lazy" decoding="async"></figure><h3>Cuidados</h3><p>Você sai com o PDF de cuidados e eu sigo por perto até a tatuagem cicatrizar. Se precisar de ajuste, a gente faz.</p></li>
+  </ol>
+</section>
+
+<section class="curadas secao nevoa" id="curadas">
+  <div class="cab entra">
+    <p class="chapeu">Com o tempo</p>
+    <h2>Depois de curada</h2>
+    <p class="lead">Traço fino bonito é o que continua bonito depois de cicatrizar. Estas fotos são de tatuagens já curadas, sem filtro de pele fresca.</p>
+  </div>
+  <ul class="cur-grade">
+    <li class="revela"><img src="assets/img/cur-1.webp" alt="Flor no pescoço, curada" width="640" height="800" loading="lazy" decoding="async" draggable="false"></li>
+    <li class="revela"><img src="assets/img/cur-2.webp" alt="Silhueta no antebraço, curada" width="640" height="800" loading="lazy" decoding="async" draggable="false"></li>
+    <li class="revela"><img src="assets/img/cur-3.webp" alt="Traço abstrato na costela, curado" width="640" height="800" loading="lazy" decoding="async" draggable="false"></li>
+    <li class="revela"><img src="assets/img/cur-4.webp" alt="Carpas nos punhos, curadas" width="640" height="800" loading="lazy" decoding="async" draggable="false"></li>
+  </ul>
+</section>
+
+<section class="disponiveis secao branco" id="disponiveis">
+  <div class="cab entra">
+    <p class="chapeu">Prontas para tatuar</p>
+    <h2>Artes disponíveis</h2>
+    <p class="lead">Desenhos meus esperando alguém. Flash exclusivo é tatuado uma vez só.</p>
+  </div>
+  <ul class="dsp-grade mob4" aria-label="Artes disponíveis">
+    <li class="dsp"><button class="dsp-quadro" data-g="assets/img/full/disp-01.webp" data-leg="Peônia" data-det="Antebraço" aria-label="Ampliar: Peônia"><img src="assets/img/disp/01.webp" alt="Peônia" width="640" height="800" loading="lazy" decoding="async" draggable="false"></button>
+      <div class="dsp-txt"><div><h3>Peônia</h3><p>Antebraço</p></div><a href="agendar.html?disp=01">Quero esta</a></div></li>
+    <li class="dsp"><button class="dsp-quadro" data-g="assets/img/full/disp-02.webp" data-leg="Floral com folhas" data-det="Antebraço" aria-label="Ampliar: Floral com folhas"><img src="assets/img/disp/02.webp" alt="Floral com folhas" width="640" height="800" loading="lazy" decoding="async" draggable="false"></button>
+      <div class="dsp-txt"><div><h3>Floral com folhas</h3><p>Antebraço</p></div><a href="agendar.html?disp=02">Quero esta</a></div></li>
+    <li class="dsp"><button class="dsp-quadro" data-g="assets/img/full/disp-03.webp" data-leg="Flores de cerejeira" data-det="Antebraço" aria-label="Ampliar: Flores de cerejeira"><img src="assets/img/disp/03.webp" alt="Flores de cerejeira" width="640" height="800" loading="lazy" decoding="async" draggable="false"></button>
+      <div class="dsp-txt"><div><h3>Flores de cerejeira</h3><p>Antebraço</p></div><a href="agendar.html?disp=03">Quero esta</a></div></li>
+    <li class="dsp"><button class="dsp-quadro" data-g="assets/img/full/disp-04.webp" data-leg="Floral nas costas" data-det="Costas" aria-label="Ampliar: Floral nas costas"><img src="assets/img/disp/04.webp" alt="Floral nas costas" width="640" height="800" loading="lazy" decoding="async" draggable="false"></button>
+      <div class="dsp-txt"><div><h3>Floral nas costas</h3><p>Costas</p></div><a href="agendar.html?disp=04">Quero esta</a></div></li>
+    <li class="dsp"><button class="dsp-quadro" data-g="assets/img/full/disp-05.webp" data-leg="Mandala com florais" data-det="Braço inteiro" aria-label="Ampliar: Mandala com florais"><img src="assets/img/disp/05.webp" alt="Mandala com florais" width="640" height="800" loading="lazy" decoding="async" draggable="false"></button>
+      <div class="dsp-txt"><div><h3>Mandala com florais</h3><p>Braço inteiro</p></div><a href="agendar.html?disp=05">Quero esta</a></div></li>
+    <li class="dsp"><button class="dsp-quadro" data-g="assets/img/full/disp-06.webp" data-leg="Mariposa, libélula e abelha" data-det="Pequenas" aria-label="Ampliar: Mariposa, libélula e abelha"><img src="assets/img/disp/06.webp" alt="Mariposa, libélula e abelha" width="640" height="800" loading="lazy" decoding="async" draggable="false"></button>
+      <div class="dsp-txt"><div><h3>Mariposa, libélula e abelha</h3><p>Pequenas</p></div><a href="agendar.html?disp=06">Quero esta</a></div></li>
+    <li class="dsp"><button class="dsp-quadro" data-g="assets/img/full/disp-07.webp" data-leg="Viagem" data-det="Mapa, avião e câmera" aria-label="Ampliar: Viagem"><img src="assets/img/disp/07.webp" alt="Viagem" width="640" height="800" loading="lazy" decoding="async" draggable="false"></button>
+      <div class="dsp-txt"><div><h3>Viagem</h3><p>Mapa, avião e câmera</p></div><a href="agendar.html?disp=07">Quero esta</a></div></li>
+    <li class="dsp"><button class="dsp-quadro" data-g="assets/img/full/disp-08.webp" data-leg="Selos de Pernambuco" data-det="Carnaval, 081" aria-label="Ampliar: Selos de Pernambuco"><img src="assets/img/disp/08.webp" alt="Selos de Pernambuco" width="640" height="800" loading="lazy" decoding="async" draggable="false"></button>
+      <div class="dsp-txt"><div><h3>Selos de Pernambuco</h3><p>Carnaval, 081</p></div><a href="agendar.html?disp=08">Quero esta</a></div></li>
+  </ul>
+</section>
+
+<section class="relatos secao azul" id="relatos">
+  <div class="cab entra">
+    <p class="chapeu">De quem já tatuou</p>
+    <h2>O que chega depois</h2>
+  </div>
+  <div class="rel-grade">
+    <blockquote class="entra"><p>Você tem a mão leve demais. Não ficou ardendo, esqueci até que fiz a tatuagem.</p><footer>Cliente, por mensagem</footer></blockquote>
+    <blockquote class="entra"><p>Mais do que uma tatuagem, você marcou um momento da minha vida com sua arte, seu carinho e seu profissionalismo.</p><footer>Cliente, por WhatsApp</footer></blockquote>
+    <blockquote class="entra"><p>Com certeza essa é a primeira de muitas que virão pelas suas mãos.</p><footer>@julisa.hair, no Instagram</footer></blockquote>
+    <blockquote class="entra"><p>Não poderia ter feito minhas primeiras tattoos com outra pessoa.</p><footer>Cliente, por WhatsApp</footer></blockquote>
+  </div>
+</section>
+
+<section class="onde secao branco" id="onde">
+  <div class="onde-grade">
+    <div class="onde-txt entra">
+      <p class="chapeu">Onde eu atendo</p>
+      <h2>Piedade, de frente para o mar</h2>
+      <p>Atendo com hora marcada no Tatu Vikings, em Piedade, Recife-PE. O endereço completo e o horário vão junto com o orçamento.</p>
+      <dl class="onde-dados">
+        <div><dt>Orçamento</dt><dd><a href="https://wa.me/5581998734439" target="_blank" rel="noopener">(81) 99873-4439</a></dd></div>
+        <div><dt>Instagram</dt><dd><a href="https://instagram.com/valeskatattoo" target="_blank" rel="noopener">@valeskatattoo</a></dd></div>
+      </dl>
+    </div>
+    <figure class="onde-foto revela"><img src="assets/img/estudio.webp" alt="Valeska tatuando um braço no estúdio, com janelas para a orla" width="1080" height="1350" loading="lazy" decoding="async"></figure>
+  </div>
+</section>
+
+<section class="duvidas secao nevoa" id="duvidas">
+  <div class="cab entra">
+    <p class="chapeu">Antes de marcar</p>
+    <h2>Dúvidas comuns</h2>
+  </div>
+  <div class="faq entra">
+    <details><summary>Como peço um orçamento?</summary><p>Pelo botão Pedir orçamento: em quatro etapas você conta a ideia, o lugar e o tamanho, e o pedido abre pronto no meu WhatsApp. Se preferir, é só chamar direto.</p></details>
+    <details><summary>Posso levar uma referência?</summary><p>Pode e ajuda muito. Eu uso a referência como ponto de partida e crio uma arte própria para você. Se já tiver um desenho, como um feito por alguém da família, eu alinho os traços e adapto para tatuagem.</p></details>
+    <details><summary>Dá para transformar uma foto em tatuagem?</summary><p>Dá. As silhuetas nascem assim: a foto vira um desenho em linha, delicado, e você aprova a arte antes da sessão.</p></details>
+    <details><summary>Qual é o menor tamanho?</summary><p>Depende do desenho, porque o traço precisa de espaço para continuar bonito depois de curado. Já tatuei peças de 5 cm cheias de detalhe. Me manda a ideia que eu te digo o tamanho certo.</p></details>
+    <details><summary>Como funcionam os cuidados?</summary><p>No fim da sessão você recebe um PDF com os cuidados detalhados e eu acompanho a sua cicatrização, sem exceção.</p></details>
+  </div>
+</section>
+
+<section class="final azul" id="agenda">
+  <canvas id="ramo" aria-hidden="true"></canvas>
+  <img class="final-ramo" src="assets/img/ramo-claro.webp" alt="" width="854" height="1397" loading="lazy" decoding="async">
+  <div class="final-in entra">
+    <p class="chapeu">Sua vez</p>
+    <h2>Me chama para criarmos a sua</h2>
+    <p>Conta a história. A gente acha o traço.</p>
+    <div class="hero-btns">
+      <a class="btn btn-claro" href="agendar.html">Pedir orçamento <i aria-hidden="true"></i></a>
+      <a class="btn btn-linha-cl" href="https://wa.me/5581998734439" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="rodape azul">
+  <div class="rod-base">
+    <p>© <span id="ano">2026</span> Valeska · Fine line em Recife-PE</p>
+    <p><a href="https://instagram.com/valeskatattoo" target="_blank" rel="noopener">@valeskatattoo</a></p>
+    <p class="assinatura">Site por <a href="https://lrgz.com.br" target="_blank" rel="noopener">L R G Z</a></p>
+  </div>
+</footer>
+
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Foto ampliada">
+  <div class="lb-topo"><span class="lb-cont" id="lb-cont"></span><button class="lb-fechar" id="lb-fechar" aria-label="Fechar"><span></span><span></span></button></div>
+  <button class="lb-nav lb-ant" id="lb-ant" aria-label="Foto anterior"></button>
+  <button class="lb-nav lb-prox" id="lb-prox" aria-label="Próxima foto"></button>
+  <div class="lb-palco" id="lb-palco"><img id="lb-img" alt=""></div>
+  <div class="lb-info"><p class="lb-leg" id="lb-leg"></p><p class="lb-det" id="lb-det"></p></div>
+</div>
+
+<script src="assets/js/traco.js?v=1" defer></script>
+<script src="assets/js/site.js?v=1" defer></script>
+</body>
+</html>

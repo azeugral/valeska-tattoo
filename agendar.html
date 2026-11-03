@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pedir orçamento · Valeska</title>
+<meta name="description" content="Monte seu pedido de orçamento com a Valeska em 4 etapas: ideia, lugar do corpo, detalhes e você. O pedido abre pronto no WhatsApp.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#f6f8f9">
+<meta property="og:title" content="Pedir orçamento · Valeska">
+<meta property="og:image" content="https://azeugral.github.io/valeska-tattoo/og.jpg?v=1">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600;700&family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css?v=1">
+<link rel="stylesheet" href="assets/css/agendar.css?v=1">
+</head>
+<body class="pg-agendar">
+
+<header class="topo rolou">
+  <a class="marca" href="index.html" aria-label="Valeska, voltar ao site">Valeska</a>
+  <a class="ag-voltar" href="index.html">Voltar ao site</a>
+</header>
+
+<main class="ag">
+  <div class="ag-in">
+    <header class="ag-cab">
+      <p class="chapeu">Orçamento</p>
+      <h1>Monte seu pedido</h1>
+      <p>Quatro etapas rápidas. No fim, o pedido abre pronto no meu WhatsApp.</p>
+    </header>
+
+    <ol class="ag-passos" data-passos>
+      <li><button type="button" data-ir="0">Tipo</button></li>
+      <li><button type="button" data-ir="1">Corpo</button></li>
+      <li><button type="button" data-ir="2">História</button></li>
+      <li><button type="button" data-ir="3">Você</button></li>
+    </ol>
+    <div class="ag-prog" aria-hidden="true"><i data-progresso></i></div>
+
+    <form class="ag-form" data-pedido novalidate>
+      <fieldset data-etapa>
+        <legend><h2>O que você quer tatuar?</h2></legend>
+        <div class="opcoes" role="radiogroup">
+          <label class="opcao"><input type="radio" name="tipo" value="Homenagem" data-id="homenagem"><span><b>Homenagem</b>Nome, data, assinatura, pezinho</span></label>
+          <label class="opcao"><input type="radio" name="tipo" value="Silhueta a partir de foto" data-id="silhueta"><span><b>Silhueta</b>A partir de uma foto</span></label>
+          <label class="opcao"><input type="radio" name="tipo" value="Floral" data-id="floral"><span><b>Floral</b>Flores, ramos e folhas</span></label>
+          <label class="opcao"><input type="radio" name="tipo" value="Escrita" data-id="escrita"><span><b>Escrita</b>Frase ou palavra</span></label>
+          <label class="opcao"><input type="radio" name="tipo" value="Arte disponível" data-id="disp"><span><b>Arte disponível</b>Desenho já pronto</span></label>
+          <label class="opcao"><input type="radio" name="tipo" value="Outra ideia" data-id="outra"><span><b>Outra ideia</b>Me conta na próxima etapa</span></label>
+        </div>
+        <div class="bloco-escolha" data-bloco="disp" hidden>
+          <h3>Qual arte?</h3>
+          <div class="mini" role="radiogroup" aria-label="Artes disponíveis">
+            <label><input type="radio" name="desenho" value="Peônia" data-id="01"><img src="assets/img/disp/01.webp" alt="" width="640" height="800" loading="lazy"><span>Peônia</span></label>
+            <label><input type="radio" name="desenho" value="Floral com folhas" data-id="02"><img src="assets/img/disp/02.webp" alt="" width="640" height="800" loading="lazy"><span>Floral com folhas</span></label>
+            <label><input type="radio" name="desenho" value="Flores de cerejeira" data-id="03"><img src="assets/img/disp/03.webp" alt="" width="640" height="800" loading="lazy"><span>Flores de cerejeira</span></label>
+            <label><input type="radio" name="desenho" value="Floral nas costas" data-id="04"><img src="assets/img/disp/04.webp" alt="" width="640" height="800" loading="lazy"><span>Floral nas costas</span></label>
+            <label><input type="radio" name="desenho" value="Mandala com florais" data-id="05"><img src="assets/img/disp/05.webp" alt="" width="640" height="800" loading="lazy"><span>Mandala com florais</span></label>
+            <label><input type="radio" name="desenho" value="Mariposa, libélula e abelha" data-id="06"><img src="assets/img/disp/06.webp" alt="" width="640" height="800" loading="lazy"><span>Mariposa, libélula e abelha</span></label>
+            <label><input type="radio" name="desenho" value="Viagem" data-id="07"><img src="assets/img/disp/07.webp" alt="" width="640" height="800" loading="lazy"><span>Viagem</span></label>
+            <label><input type="radio" name="desenho" value="Selos de Pernambuco" data-id="08"><img src="assets/img/disp/08.webp" alt="" width="640" height="800" loading="lazy"><span>Selos de Pernambuco</span></label>
+          </div>
+        </div>
+        <p class="erro-msg" data-erro="0" hidden>Escolha uma opção para seguir.</p>
+      </fieldset>
+
+      <fieldset data-etapa hidden>
+        <legend><h2>Onde e de que tamanho?</h2></legend>
+        <h3>Lugar do corpo</h3>
+        <div class="chips">
+          <label><input type="radio" name="lugar" value="Antebraço"><span>Antebraço</span></label>
+          <label><input type="radio" name="lugar" value="Braço"><span>Braço</span></label>
+          <label><input type="radio" name="lugar" value="Ombro"><span>Ombro</span></label>
+          <label><input type="radio" name="lugar" value="Punho ou mão"><span>Punho ou mão</span></label>
+          <label><input type="radio" name="lugar" value="Clavícula ou peito"><span>Clavícula ou peito</span></label>
+          <label><input type="radio" name="lugar" value="Costas"><span>Costas</span></label>
+          <label><input type="radio" name="lugar" value="Nuca ou pescoço"><span>Nuca ou pescoço</span></label>
+          <label><input type="radio" name="lugar" value="Costela"><span>Costela</span></label>
+          <label><input type="radio" name="lugar" value="Perna"><span>Perna</span></label>
+          <label><input type="radio" name="lugar" value="Tornozelo ou pé"><span>Tornozelo ou pé</span></label>
+          <label><input type="radio" name="lugar" value="Ainda não sei"><span>Ainda não sei</span></label>
+        </div>
+        <h3>Tamanho</h3>
+        <div class="chips chips-tam">
+          <label><input type="radio" name="tamanho" value="Até 5 cm"><span><b>Até 5 cm</b>mini</span></label>
+          <label><input type="radio" name="tamanho" value="5 a 10 cm"><span><b>5 a 10 cm</b>uma palma</span></label>
+          <label><input type="radio" name="tamanho" value="10 a 20 cm"><span><b>10 a 20 cm</b>um palmo</span></label>
+          <label><input type="radio" name="tamanho" value="Mais de 20 cm"><span><b>Mais de 20 cm</b>peça grande</span></label>
+          <label><input type="radio" name="tamanho" value="Quero sugestão"><span><b>Não sei</b>quero sugestão</span></label>
+        </div>
+        <p class="erro-msg" data-erro="1" hidden>Marque o lugar do corpo e o tamanho.</p>
+      </fieldset>
+
+      <fieldset data-etapa hidden>
+        <legend><h2>Me conta a história</h2></legend>
+        <label class="campo"><span data-ideia-rotulo>O que essa tatuagem representa?</span>
+          <textarea id="ideia" rows="5" placeholder="Ex.: quero homenagear minha filha com o pezinho dela e a data de nascimento."></textarea>
+        </label>
+        <label class="campo"><span>Link de referência <em>(opcional)</em></span>
+          <input id="ref" type="url" inputmode="url" placeholder="Pinterest, Instagram, drive…">
+        </label>
+        <h3>É a sua primeira tatuagem?</h3>
+        <div class="chips">
+          <label><input type="radio" name="primeira" value="Sim"><span>Sim</span></label>
+          <label><input type="radio" name="primeira" value="Não"><span>Não</span></label>
+        </div>
+        <h3>Para quando?</h3>
+        <div class="chips">
+          <label><input type="radio" name="quando" value="Este mês"><span>Este mês</span></label>
+          <label><input type="radio" name="quando" value="Próximo mês"><span>Próximo mês</span></label>
+          <label><input type="radio" name="quando" value="Sem pressa"><span>Sem pressa</span></label>
+        </div>
+        <p class="erro-msg" data-erro="2" hidden>Conta um pouco da ideia para seguir.</p>
+      </fieldset>
+
+      <fieldset data-etapa hidden>
+        <legend><h2>Quem é você?</h2></legend>
+        <label class="campo"><span>Seu nome</span><input id="nome" autocomplete="given-name" placeholder="Como quer ser chamada ou chamado"></label>
+        <label class="campo"><span>Seu Instagram <em>(opcional)</em></span><input id="insta" autocomplete="off" autocapitalize="off" placeholder="@seuperfil"></label>
+        <div class="revisao">
+          <h3>Seu pedido</h3>
+          <pre data-texto></pre>
+        </div>
+        <p class="ag-dica">Na conversa, mande também as fotos: a referência e o lugar do corpo.</p>
+        <p class="erro-msg" data-erro="3" hidden>Coloque seu nome para seguir.</p>
+      </fieldset>
+
+      <div class="ag-acoes">
+        <button type="button" class="btn btn-linha" data-voltar hidden>Voltar</button>
+        <button type="button" class="btn" data-avancar>Continuar <i aria-hidden="true"></i></button>
+        <div class="ag-enviar" data-enviar hidden>
+          <button type="submit" class="btn" data-canal="wa">Enviar pelo WhatsApp</button>
+          <button type="submit" class="btn btn-linha" data-canal="dm">Copiar e abrir a DM</button>
+        </div>
+      </div>
+      <p class="ag-rodape" data-rascunho></p>
+    </form>
+
+    <section class="ag-pronto" data-pronto hidden tabindex="-1">
+      <p class="chapeu">Pronto</p>
+      <h2>Pedido montado</h2>
+      <p data-pronto-txt>A conversa abriu em outra aba. Envie o texto junto com as fotos da referência e do lugar do corpo.</p>
+      <div class="ag-pronto-btns">
+        <a class="btn" href="https://wa.me/5581998734439" data-wa-final target="_blank" rel="noopener">Abrir o WhatsApp</a>
+        <a class="btn btn-linha" href="https://ig.me/m/valeskatattoo" target="_blank" rel="noopener">Abrir a DM</a>
+        <button type="button" class="btn btn-linha" data-copiar>Copiar de novo</button>
+      </div>
+      <pre data-texto-final></pre>
+      <a class="ag-voltar-site" href="index.html">Voltar ao site</a>
+    </section>
+  </div>
+</main>
+
+<footer class="rodape azul">
+  <div class="rod-base">
+    <p>© 2026 Valeska</p>
+    <p class="assinatura">Site por <a href="https://lrgz.com.br" target="_blank" rel="noopener">L R G Z</a></p>
+  </div>
+</footer>
+<script src="assets/js/agendar.js?v=1" defer></script>
+</body>
+</html>
